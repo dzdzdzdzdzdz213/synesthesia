@@ -1,3 +1,5 @@
+﻿#$OutputEncoding = [System.Text.UTF8Encoding]::new()
+[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new()
 # synesthesia — Cross-Sensory System Portraiture
 # Converts a single moment of system state into a multi-sensory portrait:
 # Visual (color field), Auditory (rhythm score), Tactile (texture map),
