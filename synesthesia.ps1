@@ -1,16 +1,4 @@
-﻿#$OutputEncoding = [System.Text.UTF8Encoding]::new()
-[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new()
-# synesthesia — Cross-Sensory System Portraiture
-# Converts a single moment of system state into a multi-sensory portrait:
-# Visual (color field), Auditory (rhythm score), Tactile (texture map),
-# and Olfactory (scent profile). Your machine experiences the world.
-# Every run produces a unique sensory fingerprint.
-
-$ESC = "$([char]27)"
-$RESET = "${ESC}[0m"
-$CLS = "${ESC}[2J${ESC}[H"
-
-function Get-FG($r, $g, $b) { "${ESC}[38;2;$r;$g;${b}m" }
+﻿function Get-FG($r, $g, $b) { "${ESC}[38;2;$r;$g;${b}m" }
 function Get-BG($r, $g, $b) { "${ESC}[48;2;$r;$g;${b}m" }
 
 # ─── Capture system state ───
